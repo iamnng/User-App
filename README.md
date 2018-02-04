@@ -25,3 +25,12 @@ curl -X POST \
 2) Get All Users:
 -----------------
 curl -X GET http://192.168.56.101:8080/v1/users
+
+Database Details:
+-----------------
+The application works with Postgres database with following values:
+Port: 5432
+Database: pg-test
+Username: postgres
+Password: admin
+
