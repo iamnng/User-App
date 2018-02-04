@@ -12,7 +12,7 @@ mvn clean package
 Available Endpoints:
 --------------------
 1) Create a User:
-
+-----------------
 curl -X POST \
   http://192.168.56.101:8080/v1/user \
   -H 'content-type: application/json' \
@@ -23,5 +23,5 @@ curl -X POST \
 }'
 
 2) Get All Users:
-
+-----------------
 curl -X GET http://192.168.56.101:8080/v1/users
