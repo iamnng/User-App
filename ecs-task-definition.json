@@ -1,0 +1,36 @@
+{
+	"containerDefinitions": [
+		{
+			"name": "users-application",
+			"image": "ngirolkar/users-application",
+			"portMappings": [
+				{
+					"containerPort": 8080,
+					"hostPort": 8080
+				}
+			],
+			"links": ["postgres-standalone"],
+			"cpu": 400,
+			"memory": 200
+		},
+		{
+			"name": "postgres-standalone",
+			"image": "postgres",
+			"portMappings": [
+				{
+					"containerPort": 5432,
+					"hostPort": 5432
+				}
+			],
+			"cpu": 200,
+			"memory": 200,
+			"environment": [
+				{
+					"name": "POSTGRES_PASSWORD",
+					"value": "admin"
+				}
+			]
+		}
+	],
+	"family": "user-app"
+}
