@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+ postgres-standalone:
+  image: postgres
+  environment:
+   POSTGRES_PASSWORD: admin
+  ports:
+   - "5432:5432"
+ users-application:
+  image: users-application
+  ports:
+   - "8080:8080"
+  links:
+   - postgres-standalone
