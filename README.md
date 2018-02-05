@@ -68,5 +68,13 @@ Step 7) Hit the endpoints as usual
 Another AWESOME way to start the applications by running the contains and linking them
 --------------------------------------------------------------------------------------
 Step 1) Clean up the running containers
+
 Step 2) Make sure that the application docker image is ready (Step 5 above)
+
 Step 3) Run the command: $ sudo docker-compose up
+
+AWS ECS
+-------
+The repository also contains Task Definition to run these 2 docker containers on ECS.
+
+Upload the task definition to ECS, create a service by referring to this task definition and the 2 containers will be started by ECS on EC2 instances.
