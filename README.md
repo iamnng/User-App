@@ -65,7 +65,7 @@ This command will also link postgres-standalone container with the container in 
 
 Step 7) Hit the endpoints as usual
 
-Another AWESOME way to start the applications by running the contains and linking them
+Another AWESOME way to start the applications by running the containers and linking them
 --------------------------------------------------------------------------------------
 Step 1) Clean up the running containers
 
